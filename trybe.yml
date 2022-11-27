@@ -1,0 +1,5 @@
+ignore_files:
+  - cypress/
+  - .eslintignore
+  - .eslintrc.json
+  - .stylelintrc.json

@@ -1,0 +1,538 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-22T18:49:03.250Z",
+    "end": "2022-11-22T18:49:05.072Z",
+    "duration": 1822,
+    "testsRegistered": 12,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 12,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "2872efbf-3b11-4213-873f-8733bf273a3b",
+      "title": "",
+      "fullFile": "cypress\\integration\\project.spec.js",
+      "file": "cypress\\integration\\project.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2451da9d-e40a-44f0-820a-9871468b0346",
+          "title": "Shopping Cart Project",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "6631798d-093d-4c0f-bcb5-eddeb78b0f38",
+              "title": "1 - Desenvolva testes para atingir 25% de cobertura total e 100% da função fetchProducts",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Verifica a cobertura de testes unitários",
+                  "fullTitle": "Shopping Cart Project 1 - Desenvolva testes para atingir 25% de cobertura total e 100% da função fetchProducts Verifica a cobertura de testes unitários",
+                  "timedOut": null,
+                  "duration": 1727,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.exec('npm run test:coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0 && npm run serialize');\ncy.readFile('coverage/coverage-summary.json').its('total.functions.pct').should('be.gte', 25.00);\ncy.readFile('coverage/coverage-summary.json').its('fetchProducts.functions.pct').should('be.gte', 100.00);\ncy.readFile('coverage/coverage-summary.json').its('fetchProducts.lines.pct').should('be.gte', 100.00);",
+                  "err": {
+                    "message": "Uncaught SyntaxError: Identifier 'saveCartItems' has already been declared\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Shopping Cart Project`",
+                    "estack": "Uncaught SyntaxError: Identifier 'saveCartItems' has already been declared\n\nThis error originated from your application code, not from Cypress.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Shopping Cart Project`\n    at http://localhost:53435/script.js:1:1",
+                    "diff": null
+                  },
+                  "uuid": "e8f277c4-f156-4f42-a179-412c3be4f978",
+                  "parentUUID": "6631798d-093d-4c0f-bcb5-eddeb78b0f38",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "e8f277c4-f156-4f42-a179-412c3be4f978"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 1727,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "9c355df8-2e11-406e-a5f0-75ea6e468017",
+              "title": "2 - Crie uma listagem de produtos",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Listagem de produtos",
+                  "fullTitle": "Shopping Cart Project 2 - Crie uma listagem de produtos Listagem de produtos",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(ITEM_SELECTOR).should('exist').should('have.length', results.length);",
+                  "err": {},
+                  "uuid": "ab11a719-11b2-4a83-a2f9-cf2a5cde7801",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "ab11a719-11b2-4a83-a2f9-cf2a5cde7801"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "e04f41da-fd20-451d-a8f9-abfd595f3981",
+              "title": "3 - Desenvolva testes para atingir 50% de cobertura total e 100% da função fetchItem",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Verifica a cobertura de testes unitários",
+                  "fullTitle": "Shopping Cart Project 3 - Desenvolva testes para atingir 50% de cobertura total e 100% da função fetchItem Verifica a cobertura de testes unitários",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.exec('npm run test:coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0 && npm run serialize');\ncy.readFile('coverage/coverage-summary.json').its('total.functions.pct').should('be.gte', 50.00);\ncy.readFile('coverage/coverage-summary.json').its('fetchItem.functions.pct').should('be.gte', 100.00);\ncy.readFile('coverage/coverage-summary.json').its('fetchItem.lines.pct').should('be.gte', 100.00);",
+                  "err": {},
+                  "uuid": "96c464fd-4ef8-4cc8-ba8f-39d9489db0d3",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "96c464fd-4ef8-4cc8-ba8f-39d9489db0d3"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "6cd9dda1-ac0a-4dc5-b077-d6edb5987d55",
+              "title": "4 - Adicione o produto ao carrinho de compras",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Adicione o produto ao carrinho de compras",
+                  "fullTitle": "Shopping Cart Project 4 - Adicione o produto ao carrinho de compras Adicione o produto ao carrinho de compras",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.wait(1000);\naddToCart(36);\ncountCart(1);\nconsole.log(results[36].id, results[36].title);\ncy.get(CART_ITEMS).children().first().should('have.text', \"SKU: \".concat(results[36].id, \" | NAME: \").concat(results[36].title, \" | PRICE: $\").concat(results[36].price));",
+                  "err": {},
+                  "uuid": "b1b0b836-d0a6-4049-b784-ec29ece8e386",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "b1b0b836-d0a6-4049-b784-ec29ece8e386"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "21f8cd74-087d-4787-b014-19563bb02b9e",
+              "title": "5 - Remova o item do carrinho de compras ao clicar nele",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Remova o item do carrinho de compras ao clicar nele",
+                  "fullTitle": "Shopping Cart Project 5 - Remova o item do carrinho de compras ao clicar nele Remova o item do carrinho de compras ao clicar nele",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "addToCart(29);\naddToCart(31);\naddToCart(15);\ncy.get(CART_ITEMS).children().eq(1).click();\ncountCart(2);\ncy.get(CART_ITEMS).children().eq(1).click();\ncountCart(1);\ncy.get(CART_ITEMS).children().eq(0).click();\ncountCart(0);",
+                  "err": {},
+                  "uuid": "c56f8555-fcdd-43ef-a4d6-f1396683b362",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "c56f8555-fcdd-43ef-a4d6-f1396683b362"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "7a15bd98-e2f8-4b4f-97e6-4496643ed32c",
+              "title": "6 - Desenvolva testes para atingir 75% de cobertura total e 100% da função saveCartItems",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Verifica a cobertura de testes unitários",
+                  "fullTitle": "Shopping Cart Project 6 - Desenvolva testes para atingir 75% de cobertura total e 100% da função saveCartItems Verifica a cobertura de testes unitários",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.exec('npm run test:coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0 && npm run serialize');\ncy.readFile('coverage/coverage-summary.json').its('total.functions.pct').should('be.gte', 75.00);\ncy.readFile('coverage/coverage-summary.json').its('saveCartItems.functions.pct').should('be.gte', 100.00);\ncy.readFile('coverage/coverage-summary.json').its('saveCartItems.lines.pct').should('be.gte', 100.00);",
+                  "err": {},
+                  "uuid": "aaefb017-f9a3-42dc-9681-29dd12fd666c",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "aaefb017-f9a3-42dc-9681-29dd12fd666c"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "22eaefb3-dd91-4305-af5d-602d13916327",
+              "title": "7 - Desenvolva testes para atingir 100% de cobertura total e 100% da função getSavedCartItems",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Verifica a cobertura de testes unitários",
+                  "fullTitle": "Shopping Cart Project 7 - Desenvolva testes para atingir 100% de cobertura total e 100% da função getSavedCartItems Verifica a cobertura de testes unitários",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.exec('npm run test:coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0 && npm run serialize');\ncy.readFile('coverage/coverage-summary.json').its('total.functions.pct').should('be.gte', 100.00);\ncy.readFile('coverage/coverage-summary.json').its('getSavedCartItems.functions.pct').should('be.gte', 100.00);\ncy.readFile('coverage/coverage-summary.json').its('getSavedCartItems.lines.pct').should('be.gte', 100.00);",
+                  "err": {},
+                  "uuid": "2ac0fd8a-ad11-41d2-b8d7-b71b2dec771b",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "2ac0fd8a-ad11-41d2-b8d7-b71b2dec771b"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "8a6adc35-bc81-4cba-a34a-acc423e0dfb9",
+              "title": "8 - Carregue o carrinho de compras através do **LocalStorage** ao iniciar a página",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Carregue o carrinho de compras através do **LocalStorage** ao iniciar a página",
+                  "fullTitle": "Shopping Cart Project 8 - Carregue o carrinho de compras através do **LocalStorage** ao iniciar a página Carregue o carrinho de compras através do **LocalStorage** ao iniciar a página",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "var first = 36;\nvar last = 29;\naddToCart(first);\ncy.wait(1000);\ncountCart(1);\ncy.get(CART_ITEMS).children().first().should('have.text', \"SKU: \".concat(results[first].id, \" | NAME: \").concat(results[first].title, \" | PRICE: $\").concat(results[first].price));\naddToCart(last);\ncy.wait(1000);\ncy.get(CART_ITEMS).children().last().should('have.text', \"SKU: \".concat(results[last].id, \" | NAME: \").concat(results[last].title, \" | PRICE: $\").concat(results[last].price));\ncy.reload({\n  onBeforeLoad: function onBeforeLoad(win) {\n    win.fetch = fetchMock;\n  }\n});\ncy.get(CART_ITEMS).children().first().should('have.text', \"SKU: \".concat(results[first].id, \" | NAME: \").concat(results[first].title, \" | PRICE: $\").concat(results[first].price));\ncy.get(CART_ITEMS).children().last().should('have.text', \"SKU: \".concat(results[last].id, \" | NAME: \").concat(results[last].title, \" | PRICE: $\").concat(results[last].price));",
+                  "err": {},
+                  "uuid": "19e71a19-b4ec-4063-80f0-87ffcdaeec08",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "Deverá ser possível remover items do carrinho ao clicar sobre eles mesmo após recarregar a página",
+                  "fullTitle": "Shopping Cart Project 8 - Carregue o carrinho de compras através do **LocalStorage** ao iniciar a página Deverá ser possível remover items do carrinho ao clicar sobre eles mesmo após recarregar a página",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "addToCart(29);\naddToCart(31);\naddToCart(15);\ncy.reload({\n  onBeforeLoad: function onBeforeLoad(win) {\n    win.fetch = fetchMock;\n  }\n});\ncy.get(CART_ITEMS).children().eq(1).click();\ncountCart(2);\ncy.get(CART_ITEMS).children().eq(1).click();\ncountCart(1);\ncy.get(CART_ITEMS).children().eq(0).click();\ncountCart(0);",
+                  "err": {},
+                  "uuid": "f85cab9b-a6fa-46d0-a299-46126400d42e",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "19e71a19-b4ec-4063-80f0-87ffcdaeec08",
+                "f85cab9b-a6fa-46d0-a299-46126400d42e"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "f5c46b1d-be71-4c43-ad54-019ea347b29d",
+              "title": "9 - Calcule o valor total dos itens do carrinho de compras de forma assíncrona",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Calcule o valor total dos itens do carrinho de compras de forma assíncrona",
+                  "fullTitle": "Shopping Cart Project 9 - Calcule o valor total dos itens do carrinho de compras de forma assíncrona Calcule o valor total dos itens do carrinho de compras de forma assíncrona",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit(PROJECT_URL, {\n  onBeforeLoad: function onBeforeLoad(win) {\n    win.fetch = fetchMock;\n  }\n});\naddToCart(5);\ncheckPrice(results, [5]);\naddToCart(42);\ncheckPrice(results, [5, 42]);\naddToCart(36);\ncheckPrice(results, [5, 42, 36]);\naddToCart(15);\ncheckPrice(results, [5, 42, 36, 15]);\ncy.get(CART_ITEMS).children().eq(1).click();\ncheckPrice(results, [5, 36, 15]);",
+                  "err": {},
+                  "uuid": "d75454db-923f-4b6f-aade-7f74894b1d4d",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "d75454db-923f-4b6f-aade-7f74894b1d4d"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "a33775d2-5be0-41e8-acf7-94f421f92f1f",
+              "title": "10 - Implemente a lógica no botão Esvaziar Carrinho para limpar o carrinho de compras",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Botão para limpar carrinho de compras",
+                  "fullTitle": "Shopping Cart Project 10 - Implemente a lógica no botão Esvaziar Carrinho para limpar o carrinho de compras Botão para limpar carrinho de compras",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "addToCart(3);\naddToCart(0);\naddToCart(1);\ncountCart(3);\ncy.get(EMPTY_CART_BUTTON).click();\ncountCart(0);",
+                  "err": {},
+                  "uuid": "bbb2bb98-2369-4950-a4e8-935695ad4c56",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "bbb2bb98-2369-4950-a4e8-935695ad4c56"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "d8c37eaa-a2db-4abe-b79f-492d0adabacd",
+              "title": "11 - Adicione um texto de `carregando` durante uma requisição à API",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Adicionar um texto de \"carregando\" durante uma requisição à API",
+                  "fullTitle": "Shopping Cart Project 11 - Adicione um texto de `carregando` durante uma requisição à API Adicionar um texto de \"carregando\" durante uma requisição à API",
+                  "timedOut": null,
+                  "duration": 0,
+                  "state": "skipped",
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit(PROJECT_URL);\ncy.get(LOADING).should('exist').wait(3000).should('not.exist');",
+                  "err": {},
+                  "uuid": "984a4320-dac9-4141-ae66-33ebfa379af8",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "984a4320-dac9-4141-ae66-33ebfa379af8"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
